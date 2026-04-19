@@ -1,5 +1,5 @@
 import React from "react";
-import image from "/public/profile2.png";
+import image from "/public/profile2.jpg";
 import {
   Sun,
   Moon,
@@ -10,6 +10,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import aws from "/public/awscp.png";
+import awssaa03 from "/public/awssaa03.png";
 
 const HeaderLeft = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -67,13 +68,28 @@ const HeaderLeft = ({ darkMode, toggleDarkMode }) => {
           <h1 className="text-base font-semibold md:text-2xl">REDES SOCIAIS</h1>
 
           <ul className="space-y-3">
-            <li className="flex items-center gap-2">
-              <Github className="text-xl" />
-              <span>@Github/KaykePeresD</span>
+            <li>
+              <a
+                href="https://github.com/KaykePeresD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Github className="text-xl" />
+                <span>@Github/KaykePeresD</span>
+              </a>
             </li>
-            <li className="flex items-center gap-2">
-              <Linkedin className="text-xl" />
-              <span>@Linkedin/Kayke-Peres</span>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kayke-peres"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Linkedin className="text-xl" />
+                <span>@Linkedin/Kayke-Peres</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -106,31 +122,13 @@ const HeaderLeft = ({ darkMode, toggleDarkMode }) => {
                 className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
                     dark:bg-white"
               >
-                HTML
+                AWS
               </span>
               <span
                 className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
                     dark:bg-white"
               >
-                CSS
-              </span>
-              <span
-                className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
-                    dark:bg-white"
-              >
-                JavaScript
-              </span>
-              <span
-                className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
-                    dark:bg-white"
-              >
-                ReactJS
-              </span>
-              <span
-                className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
-                    dark:bg-white"
-              >
-                TailwindCSS
+                GCP
               </span>
               <span
                 className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
@@ -142,21 +140,56 @@ const HeaderLeft = ({ darkMode, toggleDarkMode }) => {
                 className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
                     dark:bg-white"
               >
-                AWS
+                CI/CD
+              </span>
+              <span
+                className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
+                    dark:bg-white"
+              >
+                Kubernetes
+              </span>
+              <span
+                className="rounded-xl bg-black text-white p-3 text-center dark:text-black 
+                    dark:bg-white"
+              >
+                Docker
               </span>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-b-gray-700 ">
+        <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-b-gray-700">
           <h1 className="text-base font-semibold md:text-2xl">
             CERTIFICAÇÕES AWS
           </h1>
-          <div className="flex flex-wrap gap-3">
-            <div className="flex flex-wrap gap-3">
-              <span className="w-36 h-36">
-                <img src={aws} alt="" />
-              </span>
-            </div>
+
+          <div className="flex flex-wrap gap-4">
+            {[
+              {
+                img: aws,
+                link: "https://www.credly.com/earner/earned/badge/9ae3fb11-2303-452e-a489-4756471140ec",
+              },
+              {
+                img: awssaa03,
+                link: "https://www.credly.com/earner/earned/badge/431a22de-ea02-438d-b0f0-f2e713898307",
+              },
+            ].map((cert, index) => (
+              <a
+                key={index}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-36 h-36 p-3 rounded-2xl 
+      hover:scale-105 transition-all duration-300 
+      cursor-pointer flex items-center justify-center 
+      "
+              >
+                <img
+                  src={cert.img}
+                  alt={`AWS Certification ${index + 1}`}
+                  className="w-full h-full object-contain"
+                />
+              </a>
+            ))}
           </div>
         </div>
 

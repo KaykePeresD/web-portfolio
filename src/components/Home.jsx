@@ -10,16 +10,17 @@ const Home = () => {
         <div className="space-y-5 ">
           <h1 className="text-2xl font-bold md:text-4xl  ">Sobre</h1>
           <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
-            Atualmente estou cursando Análise e Desenvolvimento de Sistemas e
-            trabalho na área de TI na CloudDog, integrando o time de Projetos.
-            No meu dia a dia, atuo com serviços da AWS e Infraestrutura como
-            Código utilizando Terraform, contribuindo para a construção e
-            manutenção de soluções em nuvem de forma automatizada e escalável.
-            Possuo a certificação AWS Cloud Practitioner e estou me preparando
-            para a certificação Associate, aprofundando meus conhecimentos em
-            arquitetura e serviços avançados da AWS. Sou apaixonado por aprender
-            coisas novas, estudar constantemente e evoluir continuamente como
-            profissional de tecnologia.
+            Quando entrei no mercado de TI, meu objetivo era claro: aprender na
+            prática como infraestrutura de verdade funciona. Em menos de 1 ano,
+            conquistei 2 certificações AWS, coloquei pipelines CI/CD em produção
+            e aprendi que infraestrutura bem feita é o que separa sistemas que
+            escalam dos que quebram. <br />
+            Sou DevOps Engineer com foco em AWS e GCP, atuando no dia a dia com
+            Terraform, Docker, Kubernetes e GitHub Actions para construir
+            ambientes seguros, resilientes e eficientes, Estou em formação de
+            ADS pela Anhanguera e trago do meu histórico anterior habilidades de
+            organização e autogestão que complementam o lado técnico. Sempre
+            aberto para conversar sobre Cloud, DevOps e novas oportunidades.
           </p>
         </div>
 
@@ -38,14 +39,30 @@ const Home = () => {
               <span className="font-light">CloudDog</span>
               <span className="text-sm text-gray-400">2025 - Atual</span>
               <span className="text-sm text-gray-800 dark:text-gray-200">
-                Atuo no time de Projetos, desenvolvendo e mantendo
-                infraestruturas em nuvem utilizando serviços AWS e
-                Infraestrutura como Código com Terraform, responsável por criar,
-                versionar e automatizar recursos cloud, garantindo ambientes
-                escaláveis, seguros e padronizados. Também participo da
-                implementação de pipelines, otimização de processos,
-                contribuindo para entregas mais rápidas, confiáveis e alinhadas
-                às boas práticas de DevOps.
+                Atuo como DevOps Engineer em um ambiente de consultoria cloud,
+                apoiando múltiplos clientes em projetos de infraestrutura AWS.
+                Principais atividades:
+                <li>
+                  • Provisionamento de infraestrutura como código com Terraform
+                </li>
+                <li>
+                  • Criação e manutenção de pipelines CI/CD com GitHub Actions e
+                  AWS CodePipeline
+                </li>
+                <li>
+                  • Gerenciamento de containers com Docker e Kubernetes -
+                  Monitoramento e observabilidade de ambientes AWS (CloudWatch),
+                  Grafana e DataDog
+                </li>
+                <li>
+                  • Suporte em projetos de migração e modernização de
+                  infraestrutura
+                </li>
+                <li>Certificações obtidas durante o período:</li>
+                <li>
+                  • AWS Certified Cloud Practitioner (nov/2025) • AWS Certified
+                  Solutions Architect – Associate
+                </li>
               </span>
             </li>
 
@@ -76,6 +93,25 @@ const Home = () => {
             Licenças e Certificados
           </h1>
           <div className="space-y-10">
+            <div className="text-baseline space-y-3">
+              <h3 className="text-sm font-semibold md:text-lg">
+                AWS Solutions Architect Associate (2026)
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
+                A certificação AWS Solutions Architect Associate valida minha
+                capacidade de projetar arquiteturas escaláveis, seguras,
+                resilientes e com alta disponibilidade utilizando serviços da
+                AWS. Com ela, demonstro conhecimento prático na construção de
+                soluções bem arquitetadas, aplicando boas práticas dos pilares
+                do Well-Architected Framework, incluindo performance, segurança,
+                confiabilidade e otimização de custos. Além disso, evidencia
+                minha habilidade em tomar decisões técnicas baseadas em
+                requisitos de negócio, escolhendo os serviços mais adequados
+                para cada cenário. Essa certificação reforça minha evolução como
+                profissional de cloud, com foco em arquitetura de soluções
+                robustas e preparadas para ambientes reais de produção.
+              </p>
+            </div>
             <div className="text-baseline space-y-3">
               <h3 className="text-sm font-semibold md:text-lg">
                 AWS Cloud Practitioner (2025)
